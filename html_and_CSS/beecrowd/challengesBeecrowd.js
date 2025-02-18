@@ -8,3 +8,4 @@ var B = parseInt(lines[1]); // Segundo número (linha 1)
 const SUM = A + B;
 
 console.log("SOMA = " + SUM);
+
