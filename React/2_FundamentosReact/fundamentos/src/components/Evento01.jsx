@@ -1,6 +1,23 @@
 import React from 'react'
 
 const Evento01 = () => {
+  
+  
+  
+  const renderSomething = (x) => {
+
+    if(x == true){
+      return (<h3> Estou renderizando este componente </h3>)
+      
+    } else {
+      return (<h3> Estou renderizando outro componente </h3>)
+    }
+  }
+  
+  
+  
+  
+  
   return (
     <div>
 
@@ -14,6 +31,9 @@ const Evento01 = () => {
             Limpar console
         </button>
       </div>
+
+      {renderSomething(true)}
+      {renderSomething(false)}
     </div>
   )
 }
