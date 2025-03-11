@@ -7,6 +7,8 @@ import Objeto from './components/Objeto.jsx'
 import MeuComponente from './components/MeuComponente.jsx'
 import Evento01 from './components/Evento01.jsx'
 import Evento02 from './components/Evento02.jsx'
+import ComponenteTeste01 from './components/ComponenteTeste01.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +24,7 @@ function App() {
         <MeuComponente/>
         <Evento01/>
         <Evento02/>
+        <ComponenteTeste01/>
       </div>
 
       {/*<h1>Vite + React</h1> */}
