@@ -1,7 +1,9 @@
 import './App.css'
 // método de importar imagens
 import image from './assets/11504366.jpg'
+import ComponenteDeClasse from './components/ComponenteDeClasse.jsx'
 import Estado from './components/Estado.jsx'
+import Estado02 from './components/Estado02.jsx'
 
 function App() {
 
@@ -9,7 +11,7 @@ function App() {
     <>
       <div className="App">
         <h1>Imagem</h1>
-
+        
         {/*Utilizamos para acessar o public apenas o /*/}
         <img src="/3343973.jpg" alt="imagem"/>
 
@@ -17,6 +19,7 @@ function App() {
         diretamente no src da img, pois o Webpack não processa arquivos do src/ como arquivos públicos.*/}
         <img src={image} alt="imagem"/>
 
+        
 
         {/*Trazendo de um link da web */}
         <img src = "https://img.freepik.com/premium-vector/business-woman-working-computer-desk-office_116089-4.jpg" />
@@ -24,6 +27,16 @@ function App() {
       </div>
       
       <Estado/>
+      <br/>
+      <br/>
+      <br/>
+      <Estado02/>
+      <br/>
+      <br/>
+      <br/>
+      <ComponenteDeClasse/>
+
+
 
     </>
   )
