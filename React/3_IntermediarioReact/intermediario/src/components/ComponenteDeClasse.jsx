@@ -8,11 +8,22 @@ class ComponenteDeClasse extends Component {
     }
 
     aumentar = () => {
-        
+        this.setState(
+            
+            {
+                numero: this.state.numero + 1
+            }        
+        )       
     }
 
     render(){
-        return <p>Sou um componente de Classe</p>
+
+        return (
+            <div>
+                <p>Sou um componente de Classe que conta </p>
+                <button onClick={this.aumentar}>Conte aqui: {this.state.numero}</button>
+            </div>
+        )    
     }
     
 } 

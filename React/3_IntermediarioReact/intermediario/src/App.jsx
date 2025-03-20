@@ -2,8 +2,10 @@ import './App.css'
 // método de importar imagens
 import image from './assets/11504366.jpg'
 import ComponenteDeClasse from './components/ComponenteDeClasse.jsx'
+import ContadorAutomatico from './components/ContadorAutomatico.jsx'
 import Estado from './components/Estado.jsx'
 import Estado02 from './components/Estado02.jsx'
+import Hora from './components/Hora.jsx'
 
 function App() {
 
@@ -36,7 +38,8 @@ function App() {
       <br/>
       <ComponenteDeClasse/>
 
-
+      <Hora/>
+      <ContadorAutomatico/>
 
     </>
   )
