@@ -24,10 +24,9 @@ const JogoDaVelha = () => {
 
     const [history, setHistory] = useState([Array(9).fill(null)]); //Array dos valores do jogo. 
     const [currentMove, setCurrentMove] = useState(0);
+    //x sendo o primeiro
     const xIsNext = currentMove % 2 === 0;
     const currentSquares =  history[currentMove];
-
-
 
 }
 
