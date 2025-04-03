@@ -22,14 +22,18 @@ function Board ({xIsNext, currentSquares, handlePlay}){
 //componente pai
 const JogoDaVelha = () => {
 
+    //Histórico de jogadas e o movimento atual são os dados importantes de estado desse componente
     const [history, setHistory] = useState([Array(9).fill(null)]); //Array dos valores do jogo. 
     const [currentMove, setCurrentMove] = useState(0);
+    
     //x sendo o primeiro
-    const xIsNext = currentMove % 2 === 0;
+    const xIsNext = currentMove % 2 === 0; // === estritamente igual a zero
     const currentSquares =  history[currentMove];
 
+    //Atualiza o estado após uma jogada, nextSquares é um array
     function handlePlay (nextSquares) {
-        const nextHistory = [...history.slice(0, currentMove), nextSquares];
+        //Constrói um novo histórico
+        const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
         setHistory(nextHistory);
         setCurrentMove(nextHistory.length - 1);        
     }
@@ -64,10 +68,11 @@ const JogoDaVelha = () => {
             <div className='game-info'>
                 <ol>{moves}</ol>
             </div>
+
+
         </div>
     )
 }
-
 
 
 
